@@ -5,7 +5,7 @@ import MusicPlayer from "../components/MusicPlayer";
 function HomePage() {
   return (
     <div style={{ display: "flex", justifyContent: "center" }}>
-      <div>HomePage</div>
+      <div>PAGINA PRINCIPAL</div>
       <div
         style={{
           position: "fixed",
