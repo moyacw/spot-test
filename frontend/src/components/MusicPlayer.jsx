@@ -6,7 +6,9 @@ import "./styles.css";
 function MusicPlayer() {
   return (
     <div style={{ display: "flex", flexDirection: "row" }}>
-      <div style={{ backgroundColor: "red" }}>CARATULA</div>
+      <div>
+        <img src="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=50" />
+      </div>
       <div
         style={{
           display: "flex",
@@ -17,7 +19,7 @@ function MusicPlayer() {
         }}
       >
         <div>Artista</div>
-        <div>Cancion</div>
+        <p>Cancion</p>
       </div>
       <H5AudioPlayer src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3" />
     </div>
