@@ -6,16 +6,6 @@ function HomePage() {
   return (
     <div style={{ display: "flex", justifyContent: "center" }}>
       <div>PAGINA PRINCIPAL</div>
-      <div
-        style={{
-          position: "fixed",
-          bottom: 0,
-          width: "100%",
-          left: 0,
-        }}
-      >
-        <MusicPlayer />
-      </div>
     </div>
   );
 }
