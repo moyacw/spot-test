@@ -5,7 +5,13 @@ import "./styles.css";
 
 function MusicPlayer() {
   return (
-    <div style={{ display: "flex", flexDirection: "row" }}>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        backgroundColor: "#14213d",
+      }}
+    >
       <div style={{ marginRight: 10 }}>
         <img
           src="https://cdn.kingscross.co.uk/media/20191118225723/Tame-Impala.jpeg"
@@ -17,8 +23,9 @@ function MusicPlayer() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          alignItems: "center",
+          //alignItems: "center",
           width: "10%",
+          maxWidth: "10%",
         }}
       >
         <div>Artista</div>
@@ -27,10 +34,10 @@ function MusicPlayer() {
             overflow: "hidden",
             textOverflow: "ellipsis",
             whiteSpace: "nowrap",
-            width: "150px",
+            width: "175px",
           }}
         >
-          nombre de la cancion larga
+          nombre de la cancion larga.
         </div>
       </div>
       <H5AudioPlayer src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3" />
