@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import H5AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import "./styles.css";
 import { COLORS } from "../colors/colors";
+import { useEffect } from "react";
 
-function MusicPlayer() {
+function MusicPlayer(song) {
+  const [music, setMusic] = useState(null);
+
+  useEffect(() => {}, [song]);
+
   return (
     <div
       style={{
@@ -15,7 +20,7 @@ function MusicPlayer() {
     >
       <div style={{ marginRight: 10 }}>
         <img
-          src="https://cdn.kingscross.co.uk/media/20191118225723/Tame-Impala.jpeg"
+          src="https://www.aimm.edu/hubfs/Blog%20Images/Top%2010%20Album%20Covers%20of%202017/Tyler%20the%20Creator-%20Flower%20boy.jpg"
           style={{ height: 80, aspectRatio: 1, paddingLeft: 5 }}
         />
       </div>
