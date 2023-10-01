@@ -8,16 +8,6 @@ function App() {
   return (
     <>
       <HomePage />
-      <div
-        style={{
-          position: "fixed",
-          bottom: 0,
-          width: "100%",
-          left: 0,
-        }}
-      >
-        <MusicPlayer />
-      </div>
     </>
   );
 }

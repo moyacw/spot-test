@@ -5,11 +5,10 @@ import "./styles.css";
 import { COLORS } from "../colors/colors";
 import { useEffect } from "react";
 
-function MusicPlayer(song) {
-  const [music, setMusic] = useState(null);
-
-  useEffect(() => {}, [song]);
-
+function MusicPlayer({ song }) {
+  useEffect(() => {
+    console.log(song);
+  }, [song]);
   return (
     <div
       style={{
@@ -20,7 +19,11 @@ function MusicPlayer(song) {
     >
       <div style={{ marginRight: 10 }}>
         <img
-          src="https://www.aimm.edu/hubfs/Blog%20Images/Top%2010%20Album%20Covers%20of%202017/Tyler%20the%20Creator-%20Flower%20boy.jpg"
+          src={
+            song
+              ? song.cover
+              : "https://files.readme.io/f2e91bb-portalDocs-sonosApp-defaultArtAlone.png"
+          }
           style={{ height: 80, aspectRatio: 1, paddingLeft: 5 }}
         />
       </div>
@@ -34,7 +37,7 @@ function MusicPlayer(song) {
           maxWidth: "10%",
         }}
       >
-        <div>Artista</div>
+        <div>{song ? song.artist : ""}</div>
         <div
           style={{
             overflow: "hidden",
@@ -43,13 +46,10 @@ function MusicPlayer(song) {
             width: "175px",
           }}
         >
-          nombre de la cancion larga.
+          {song ? song.title : ""}
         </div>
       </div>
-      <H5AudioPlayer
-        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3"
-        showSkipControls
-      />
+      <H5AudioPlayer src={song ? song.link : ""} showSkipControls autoPlay />
     </div>
   );
 }
