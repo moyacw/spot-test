@@ -2,6 +2,7 @@ import React from "react";
 import H5AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import "./styles.css";
+import { COLORS } from "../colors/colors";
 
 function MusicPlayer() {
   return (
@@ -9,7 +10,7 @@ function MusicPlayer() {
       style={{
         display: "flex",
         flexDirection: "row",
-        backgroundColor: "#14213d",
+        backgroundColor: COLORS.backgroundColor,
       }}
     >
       <div style={{ marginRight: 10 }}>
@@ -40,7 +41,10 @@ function MusicPlayer() {
           nombre de la cancion larga.
         </div>
       </div>
-      <H5AudioPlayer src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3" />
+      <H5AudioPlayer
+        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3"
+        showSkipControls
+      />
     </div>
   );
 }

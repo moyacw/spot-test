@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
 import MusicPlayer from "../components/MusicPlayer";
+import { COLORS } from "../colors/colors";
 
 function HomePage() {
   const songs = [
@@ -40,7 +41,7 @@ function HomePage() {
             style={{
               height: 200,
               aspectRatio: 1,
-              backgroundColor: "red",
+              backgroundColor: COLORS.accentColor,
               margin: 10,
             }}
           >

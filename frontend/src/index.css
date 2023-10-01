@@ -2,9 +2,10 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
 
-  --background-color: #14213d;
-  --text-color: #e5e5e5;
-  --accent-color: #fca311;
+  --background-color: #b9baa3;
+  --text-color: #0a100d;
+  --accent-color: #a22c29;
+  --alternative-color: #d6d5c9;
   --black: #000000;
   --white: #ffffff;
 }
